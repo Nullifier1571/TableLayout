@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/icon_publish"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:duplicateParentState="true"
+            android:src="@drawable/selector_publish"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_normal"
+            android:layout_width="40dp"
+            android:layout_height="28dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp">
+
+            <ImageView
+                android:id="@+id/tab_icon"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:duplicateParentState="true" />
+
+            <ImageView
+                android:id="@+id/tab_red_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@mipmap/messages_red_point"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tab_msg_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="50"
+                android:textColor="@color/tab_selected_text_color"
+                android:textSize="8dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tab_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:duplicateParentState="true"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:text="消息"
+        android:textSize="10dp" />
+
+</RelativeLayout>
